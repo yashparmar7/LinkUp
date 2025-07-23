@@ -140,7 +140,7 @@ export async function getFriendRequests(req, res) {
       status: "accepted",
     }).populate("recipient", "fullName profilePic");
 
-    res.status(200).json({ incomingRequest, acceptFriendRequest });
+    res.status(200).json({ incomingRequest, acceptedRequest });
   } catch (error) {
     console.log("Error in getFriendRequest controller", error.message);
     res.status(500).json({ message: "Internal Server Error" });
