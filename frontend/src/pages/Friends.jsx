@@ -4,6 +4,7 @@ import { useQuery } from "@tanstack/react-query";
 import FriendCard from "../components/FriendCard";
 import { Link } from "react-router";
 import { Users2Icon } from "lucide-react";
+import NoFriendsFound from "../components/NoFriendsFound";
 
 const Friends = () => {
   const { data: friends = [], isLoading: loadingFriends } = useQuery({
