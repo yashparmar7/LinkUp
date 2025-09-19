@@ -39,7 +39,7 @@ cd ../frontend && npm install
 # Setup environment variables (see .env.example)
 
 # Run Backend
-cd backend && npm run dev
+cd backend && npm start
 
 # Run Frontend
-cd frontend && npm start
+cd frontend &&  npm run dev
